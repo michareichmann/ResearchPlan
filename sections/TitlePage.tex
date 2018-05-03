@@ -1,0 +1,42 @@
+\makeatletter
+
+\newcommand*{\version}[1]{\gdef\@version{#1}}
+\newcommand*{\@version}{0.0}
+
+\renewcommand*{\maketitle}{
+\begin{titlepage}
+
+	\begin{figure}[t]\centering
+		\begin{minipage}{0.45\linewidth}\flushleft
+			\ETHlogo[6cm]
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.45\linewidth}\flushright
+			\includegraphics[width=3.5cm]{IPA}
+		\end{minipage}
+		\hrule height 1pt\vspace*{2cm}
+	\end{figure}
+	
+	\centering
+	{\Large\scshape Research Plan}\\[15pt]
+	for the Dissertation of \@author\\ born on $15^{\text{th}}$ December $1988$\\[10pt]
+	submitted in May 2018\\[80pt]
+	{\LARGE\slshape\@title\par}
+	\vfill
+	
+	\begin{figure}[b]\centering
+% 		\hrule height 1pt\vspace*{5pt}
+		\begin{minipage}{0.45\linewidth}\flushleft
+			Z\"urich, \@date
+		\end{minipage}\hfill
+		\begin{minipage}{0.45\linewidth}\flushright
+			version \@version
+		\end{minipage}
+	\end{figure}
+
+\end{titlepage}}
+
+
+
+
+
